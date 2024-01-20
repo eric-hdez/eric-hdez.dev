@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Stack, Typography } from '@mui/joy';
 import Image from 'next/image';
 
-import eric from '../../../public/me.jpg';
+import eric from '../../../public/IMG_2699.jpeg';
 
 export default function About() {
   return (
@@ -41,7 +41,7 @@ export default function About() {
             height: 'auto',
           }}
           alt="Eric posing at the UC Santa Cruz Arboretum"
-          quality={50}
+          quality={75}
           priority
         />
       </Grid>

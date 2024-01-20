@@ -76,7 +76,7 @@ export default function Home() {
           }}
           alt="Eric posing on his birthday"
           priority
-          quality={50}
+          quality={75}
         />
       </Grid>
     </Grid>
