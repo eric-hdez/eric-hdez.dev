@@ -46,13 +46,13 @@ export const NavBar = ({ height, handleDrawerOpen }: NavBarProps) => {
               sx={{
                 display: {
                   xs:
-                    path === `/${name}` || (path === "/" && name === "Home")
+                    path === `/${name}` || (path === "/" && name === "home")
                       ? "flex"
                       : "none",
                   md: "flex",
                 },
                 bgcolor:
-                  path === `/${name}` || (path === "/" && name === "Home")
+                  path === `/${name}` || (path === "/" && name === "home")
                     ? `var(--joy-palette-${color}-outlinedHoverBg)`
                     : "transparent",
               }}
