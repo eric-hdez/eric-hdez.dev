@@ -33,7 +33,7 @@ export default function Navigation() {
   return (
     <>
       <Box width="100%" position="fixed" top={0} zIndex={2} bgcolor="background.body">
-        <NavBar {...{ height, handleDrawerOpen }} />
+        <NavBar {...{ height, drawerOpen, handleDrawerOpen }} />
       </Box>
       <Box height={height} />
       <Box width="100%" height="100%">
