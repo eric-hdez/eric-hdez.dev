@@ -39,7 +39,13 @@ export const NavBar = ({
               : "transparent",
           }}
         >
-          <MenuIcon />
+          <MenuIcon
+            sx={{
+              color: drawerOpen
+                ? `var(--joy-palette-neutral-plainHoverColor)`
+                : `var(--Icon-color)`,
+            }}
+          />
         </IconButton>
       </Box>
       <Box display="flex" flexGrow={1} justifyContent="center">
