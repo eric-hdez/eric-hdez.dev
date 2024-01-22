@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { Stack, IconButton, Box } from '@mui/joy';
 import MenuIcon from '@mui/icons-material/Menu';
-import ModeToggle from '../ModeToggle';
+import ModeToggle from '../mode-toggle';
 import NavItem from './item';
 import { navItems, NavProps } from './navigation';
 

@@ -3,7 +3,7 @@
 import { Box, Stack } from '@mui/joy';
 import NavItem from './item';
 import { NavProps, navItems } from './navigation';
-import BackDrop from '../BackDrop';
+import BackDrop from '../back-drop';
 
 export const NavDrawer = ({ drawerOpen, handleDrawerOpen }: NavProps) => {
   return (
