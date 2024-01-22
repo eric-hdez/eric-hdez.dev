@@ -11,7 +11,11 @@ interface NavBarProps extends NavProps {
   height: string | number | undefined;
 }
 
-export const NavBar = ({ height, handleDrawerOpen }: NavBarProps) => {
+export const NavBar = ({
+  height,
+  drawerOpen,
+  handleDrawerOpen,
+}: NavBarProps) => {
   const path = usePathname();
   console.log(path);
 
@@ -29,6 +33,11 @@ export const NavBar = ({ height, handleDrawerOpen }: NavBarProps) => {
           aria-label="open-drawer"
           onClick={handleDrawerOpen}
           size="lg"
+          sx={{
+            bgcolor: drawerOpen
+              ? `var(--joy-palette-neutral-outlinedHoverBg)`
+              : "transparent",
+          }}
         >
           <MenuIcon />
         </IconButton>
