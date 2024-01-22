@@ -4,8 +4,8 @@ const nextConfig = {
     return {
       beforeFiles: [
         {
-          source: "/home",
-          destination: "/",
+          source: '/home',
+          destination: '/',
         },
       ],
     };

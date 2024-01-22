@@ -1,5 +1,13 @@
-import { Button, Link, Stack, Typography } from "@mui/joy";
-import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import { Button, Link, Stack, Typography } from '@mui/joy';
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+
+const buttons = [
+  {
+    link: 'mailto:eric-hdez@proton.me',
+    description: 'Eric\'s Email Address',
+    icon: <EmailRoundedIcon />,
+  },
+];
 
 const Copyright = () => {
   return (
@@ -9,14 +17,6 @@ const Copyright = () => {
     >{`Copyright © ${new Date().getFullYear()} Eric Hernandez. All rights reserved.`}</Typography>
   );
 };
-
-const buttons = [
-  {
-    link: "mailto:eric-hdez@proton.me",
-    description: "Eric's Email Address",
-    icon: <EmailRoundedIcon />,
-  },
-];
 
 export const Footer = () => {
   return (
@@ -28,7 +28,7 @@ export const Footer = () => {
             href={link}
             rel="noopener noreferrer"
             target="_blank"
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: 'none' }}
           >
             <Button
               startDecorator={icon}

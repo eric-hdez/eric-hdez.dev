@@ -2,15 +2,10 @@
 
 import { Box, Stack } from '@mui/joy';
 import NavItem from './item';
-import { navItems } from './navigation';
+import { NavProps, navItems } from './navigation';
 import BackDrop from '../BackDrop';
 
-export interface NavDrawerProps {
-  handleDrawerOpen: () => void;
-  drawerOpen: boolean;
-}
-
-export const NavDrawer = ({ drawerOpen, handleDrawerOpen }: NavDrawerProps) => {
+export const NavDrawer = ({ drawerOpen, handleDrawerOpen }: NavProps) => {
   return (
     <>
       <Box
@@ -29,7 +24,7 @@ export const NavDrawer = ({ drawerOpen, handleDrawerOpen }: NavDrawerProps) => {
           ))}
         </Stack>
       </Box>
-      {drawerOpen && <BackDrop onClick={handleDrawerOpen} />}
+      {drawerOpen && <BackDrop onClick={handleDrawerOpen!} />}
     </>
   );
 };

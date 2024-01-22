@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { usePathname } from "next/navigation";
-import { Stack, IconButton, Box } from "@mui/joy";
-import MenuIcon from "@mui/icons-material/Menu";
-import ModeToggle from "../ModeToggle";
-import NavItem from "./item";
-import { navItems, NavProps } from "./navigation";
+import { usePathname } from 'next/navigation';
+import { Stack, IconButton, Box } from '@mui/joy';
+import MenuIcon from '@mui/icons-material/Menu';
+import ModeToggle from '../ModeToggle';
+import NavItem from './item';
+import { navItems, NavProps } from './navigation';
 
 interface NavBarProps extends NavProps {
   height: string | number | undefined;
@@ -23,7 +23,7 @@ export const NavBar = ({
     <Stack direction="row" height={height} alignItems="center" gap={2} px={3}>
       <Box
         zIndex={2}
-        display={{ md: "none" }}
+        display={{ md: 'none' }}
         position="absolute"
         top={48}
         left={32}
@@ -36,7 +36,7 @@ export const NavBar = ({
           sx={{
             bgcolor: drawerOpen
               ? `var(--joy-palette-neutral-outlinedHoverBg)`
-              : "transparent",
+              : 'transparent',
           }}
         >
           <MenuIcon
@@ -52,7 +52,7 @@ export const NavBar = ({
         <Box
           display="flex"
           flexGrow={1}
-          justifyContent={{ xs: "center", md: "space-evenly" }}
+          justifyContent={{ xs: 'center', md: 'space-evenly' }}
         >
           {navItems.map(({ name, color }) => (
             <Box
@@ -61,15 +61,15 @@ export const NavBar = ({
               sx={{
                 display: {
                   xs:
-                    path === `/${name}` || (path === "/" && name === "home")
-                      ? "flex"
-                      : "none",
-                  md: "flex",
+                    path === `/${name}` || (path === '/' && name === 'home')
+                      ? 'flex'
+                      : 'none',
+                  md: 'flex',
                 },
                 bgcolor:
-                  path === `/${name}` || (path === "/" && name === "home")
+                  path === `/${name}` || (path === '/' && name === 'home')
                     ? `var(--joy-palette-${color}-outlinedHoverBg)`
-                    : "transparent",
+                    : 'transparent',
               }}
             >
               <NavItem {...{ name, color }} />

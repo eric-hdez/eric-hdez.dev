@@ -1,5 +1,3 @@
-// "use client";
-
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button, ColorPaletteProp } from '@mui/joy';
@@ -10,7 +8,11 @@ export interface NavItemProps extends NavProps {
   color: string;
 }
 
-export default function NavItem({ name, color, handleDrawerOpen }: NavItemProps) {
+export default function NavItem({
+  name,
+  color,
+  handleDrawerOpen,
+}: NavItemProps) {
   const path = usePathname();
   return (
     <Link href={`/${name}`} passHref>

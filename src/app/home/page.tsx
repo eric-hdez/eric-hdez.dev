@@ -1,44 +1,44 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import {
   ColorPaletteProp,
   Grid,
   IconButton,
   Stack,
   Typography,
-} from "@mui/joy";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import XIcon from "@mui/icons-material/X";
+} from '@mui/joy';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
 
-import eric from "../../../public/eric_birthday.jpg";
+import eric from '../../../public/eric_birthday.jpg';
 
 const buttons = [
   {
-    link: "https://www.linkedin.com/in/eric-hdez",
-    description: "Eric's LinkedIn Profile",
+    link: 'https://www.linkedin.com/in/eric-hdez',
+    description: 'Eric\'s LinkedIn Profile',
     icon: <LinkedInIcon />,
-    color: "primary",
+    color: 'primary',
   },
   {
-    link: "https://github.com/eric-hdez",
-    description: "Eric's GitHub Profile",
+    link: 'https://github.com/eric-hdez',
+    description: 'Eric\'s GitHub Profile',
     icon: <GitHubIcon />,
-    color: "danger",
+    color: 'danger',
   },
   {
-    link: "https://www.instagram.com/eric_witha_c",
-    description: "Eric's Instagram Profile",
+    link: 'https://www.instagram.com/eric_witha_c',
+    description: 'Eric\'s Instagram Profile',
     icon: <InstagramIcon />,
-    color: "success",
+    color: 'success',
   },
   {
-    link: "https://www.twitter.com/eric_witha__c",
-    description: "Eric's X Profile",
+    link: 'https://www.twitter.com/eric_witha__c',
+    description: 'Eric\'s X Profile',
     icon: <XIcon />,
-    color: "warning",
+    color: 'warning',
   },
 ];
 
@@ -82,8 +82,8 @@ export default function Home() {
         <Image
           src={eric}
           style={{
-            width: "100%",
-            height: "auto",
+            width: '100%',
+            height: 'auto',
           }}
           alt="Eric posing on his birthday"
           priority

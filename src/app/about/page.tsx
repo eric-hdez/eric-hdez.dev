@@ -1,8 +1,8 @@
-import React from "react";
-import { Grid, Stack, Typography } from "@mui/joy";
-import Image from "next/image";
+import React from 'react';
+import { Grid, Stack, Typography } from '@mui/joy';
+import Image from 'next/image';
 
-import eric from "../../../public/eric_arboretum.jpeg";
+import eric from '../../../public/eric_arboretum.jpeg';
 
 export default function About() {
   return (
@@ -47,8 +47,8 @@ export default function About() {
         <Image
           src={eric}
           style={{
-            width: "100%",
-            height: "auto",
+            width: '100%',
+            height: 'auto',
           }}
           alt="Eric posing at the UC Santa Cruz Arboretum"
           quality={50}
