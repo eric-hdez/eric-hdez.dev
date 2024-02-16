@@ -13,7 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 
-import eric from '../../../public/eric_birthday.jpg';
+import eric from '../../../public/eric_birthday.webp';
 
 const buttons = [
   {
@@ -85,9 +85,10 @@ export default function Home() {
             width: '100%',
             height: 'auto',
           }}
-          alt="Eric posing on his birthday"
+          alt="Portrait of Eric on his birthday"
+          quality={80}
+          placeholder="blur"
           priority
-          quality={50}
         />
       </Grid>
     </Grid>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Stack, Typography } from '@mui/joy';
 import Image from 'next/image';
 
-import eric from '../../../public/eric_arboretum.jpeg';
+import eric from '../../../public/eric_arboretum.webp';
 
 export default function About() {
   return (
@@ -50,8 +50,9 @@ export default function About() {
             width: '100%',
             height: 'auto',
           }}
-          alt="Eric posing at the UC Santa Cruz Arboretum"
-          quality={50}
+          alt="Eric posing with a banana slug statue at the UC Santa Cruz Arboretum"
+          quality={80}
+          placeholder="blur"
           priority
         />
       </Grid>

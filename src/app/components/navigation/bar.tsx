@@ -17,7 +17,6 @@ export const NavBar = ({
   handleDrawerOpen,
 }: NavBarProps) => {
   const path = usePathname();
-  console.log(path);
 
   return (
     <Stack direction="row" height={height} alignItems="center" gap={2} px={3}>
@@ -54,25 +53,22 @@ export const NavBar = ({
           flexGrow={1}
           justifyContent={{ xs: 'center', md: 'space-evenly' }}
         >
-          {navItems.map(({ name, color }) => (
+          {navItems.map(({ name, route, color }) => (
             <Box
               key={name}
               borderRadius={8}
               sx={{
                 display: {
-                  xs:
-                    path === `/${name}` || (path === '/' && name === 'home')
-                      ? 'flex'
-                      : 'none',
+                  xs: path === route ? 'flex' : 'none',
                   md: 'flex',
                 },
                 bgcolor:
-                  path === `/${name}` || (path === '/' && name === 'home')
+                  path === route
                     ? `var(--joy-palette-${color}-outlinedHoverBg)`
                     : 'transparent',
               }}
             >
-              <NavItem {...{ name, color }} />
+              <NavItem {...{ name, route, color }} />
             </Box>
           ))}
         </Box>

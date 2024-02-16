@@ -10,17 +10,18 @@ export interface NavProps {
   handleDrawerOpen?: () => void;
 }
 
-interface navItem {
+export interface NavItemData {
   name: string;
+  route: string;
   color: string;
 }
 
 const height: number = 140;
 
-export const navItems: navItem[] = [
-  { name: 'home', color: 'primary' },
-  { name: 'about', color: 'danger' },
-  { name: 'resume', color: 'success' },
+export const navItems: NavItemData[] = [
+  { name: 'home', route: '/', color: 'primary' },
+  { name: 'about', route: '/about', color: 'danger' },
+  { name: 'resume', route: '/resume', color: 'success' },
 ];
 
 export default function Navigation() {
@@ -32,7 +33,13 @@ export default function Navigation() {
 
   return (
     <>
-      <Box width="100%" position="fixed" top={0} zIndex={2} bgcolor="background.body">
+      <Box
+        width="100%"
+        position="fixed"
+        top={0}
+        zIndex={2}
+        bgcolor="background.body"
+      >
         <NavBar {...{ height, drawerOpen, handleDrawerOpen }} />
       </Box>
       <Box height={height} />

@@ -19,8 +19,8 @@ export const NavDrawer = ({ drawerOpen, handleDrawerOpen }: NavProps) => {
         borderBottom={2}
       >
         <Stack direction="column" p={1.25} spacing={2}>
-          {navItems.map(({ name, color }) => (
-            <NavItem key={name} {...{ name, color, handleDrawerOpen }} />
+          {navItems.map(({ name, route, color }) => (
+            <NavItem key={name} {...{ name, route, color, handleDrawerOpen }} />
           ))}
         </Stack>
       </Box>
