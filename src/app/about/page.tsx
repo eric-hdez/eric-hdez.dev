@@ -12,25 +12,23 @@ export default function About() {
           <Stack direction="column" spacing={1} overflow="scroll">
             <Typography level="h1">About Me</Typography>
             <Typography>
-              Hi there, My name is Eric! I am 22 years old and recently
-              graduated from the University of California, Santa Cruz with a
-              B.S. in Computer Science. In February 2024, I am relocating to New
-              York City to start my career as a Software Engineer at Bloomberg
-              LP.
+              Hi there, My name is Eric! I&apos;m a 22 years old Software
+              Engineer at Bloomberg LP in New York City. I completed a BS in
+              Computer Science at the University of California, Santa Cruz in
+              2023.
             </Typography>
             <Typography>
               Outside of my professional pursuits, you can catch me embracing
               the beauty of nature on a hike, pushing myself at the gym, getting
               lost in the verses of romantic poets, or taking in the
-              breath-taking beauty of the night sky. As a first generation
-              Mexican-American, I recently discovered a passion for remaking
-              some of my favorite traditional dishes from Mexican culture. I
-              love sharing my culinary creations with friends and family to show
-              my appreciation for them!
+              breath-taking beauty of the night sky. I recently discovered a
+              passion for recreating some of my favorite traditional dishes from
+              Mexican culture/cuisine. I love sharing my culinary creations with
+              friends and family to show my appreciation for them!
             </Typography>
             <Typography>
               I enjoy having conversations about tech or any of the hobbies that
-              I am passionate about. Feel free to reach out to me via social
+              I&apos;m passionate about. Feel free to reach out to me via social
               media or email if you would like to have a chat!
             </Typography>
           </Stack>

@@ -52,8 +52,8 @@ export default function Home() {
               Eric Hernandez
             </Typography>
             <Typography level="body-lg">
-              I&apos;m an incoming Software Engineer at Bloomberg LP with a B.S.
-              in Computer Science from the University of California, Santa Cruz.
+              I&apos;m a Software Engineer at Bloomberg LP with a B.S. in
+              Computer Science from the University of California, Santa Cruz.
             </Typography>
           </Stack>
           <Stack direction="row" spacing={2}>
