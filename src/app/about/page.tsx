@@ -12,15 +12,17 @@ export default function About() {
           <Stack direction="column" spacing={1} overflow="scroll">
             <Typography level="h1">About Me</Typography>
             <Typography>
-              Hi there, My name is Eric! I&apos;m a 22 years old Software
-              Engineer at Bloomberg LP in New York City. I completed a BS in
-              Computer Science at the University of California, Santa Cruz in
-              2023.
+              Hi there, My name is Eric! I&apos;m a 23 year old Software
+              Engineer at Bloomberg LP with a B.S. in Computer Science from the
+              University of California, Santa Cruz. At Bloomberg, I primarily
+              work on backend data services and pipelines that power client
+              analysis tools for fixed income securities on the Bloomberg
+              Terminal.
             </Typography>
             <Typography>
               Outside of my professional pursuits, you can catch me embracing
-              the beauty of nature on a hike, pushing myself at the gym, getting
-              lost in the verses of romantic poets, or taking in the
+              the beauty of nature on a hike, pushing my limits at the gym,
+              getting lost in the verses of romantic poets, or taking in the
               breath-taking beauty of the night sky. I recently discovered a
               passion for recreating some of my favorite traditional dishes from
               Mexican culture/cuisine. I love sharing my culinary creations with
