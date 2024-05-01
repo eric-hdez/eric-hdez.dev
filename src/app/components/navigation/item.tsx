@@ -13,13 +13,19 @@ export default function NavItem({
 }: NavItemProps) {
   const path = usePathname();
   return (
-    <Link href={route} passHref>
+    <Link href={route} shallow={true} passHref>
       <Button
         variant="outlined"
         size="lg"
         color={color as ColorPaletteProp}
         onClick={handleDrawerOpen}
         fullWidth
+        sx={{
+          bgcolor:
+            path === route
+              ? `var(--joy-palette-${color}-outlinedHoverBg)`
+              : 'transparent',
+        }}
       >
         {name.toUpperCase()}
       </Button>

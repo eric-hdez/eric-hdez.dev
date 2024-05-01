@@ -1,7 +1,14 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { Stack, IconButton, Box } from '@mui/joy';
+import {
+  ColorPaletteProp,
+  Box,
+  IconButton,
+  Link as JoyLink,
+  Stack,
+} from '@mui/joy';
+import DownloadIcon from '@mui/icons-material/Download';
 import MenuIcon from '@mui/icons-material/Menu';
 import ModeToggle from '../mode-toggle';
 import NavItem from './item';
@@ -62,13 +69,30 @@ export const NavBar = ({
                   xs: path === route ? 'flex' : 'none',
                   md: 'flex',
                 },
-                bgcolor:
-                  path === route
-                    ? `var(--joy-palette-${color}-outlinedHoverBg)`
-                    : 'transparent',
               }}
             >
               <NavItem {...{ name, route, color }} />
+              {path === '/resume' ? (
+                <JoyLink
+                  component="a"
+                  href="/eric_hdez_resume_dec.pdf"
+                  download
+                >
+                  <IconButton
+                    variant="outlined"
+                    size="lg"
+                    color={color as ColorPaletteProp}
+                    sx={{
+                      ml: 2,
+                      display: path === route ? 'flex' : 'none',
+                    }}
+                  >
+                    <DownloadIcon />
+                  </IconButton>
+                </JoyLink>
+              ) : (
+                <></>
+              )}
             </Box>
           ))}
         </Box>
