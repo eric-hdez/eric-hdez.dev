@@ -15,8 +15,8 @@ export default function About() {
               Hi there, My name is Eric! I&apos;m a 23 year old Software
               Engineer at Bloomberg LP with a B.S. in Computer Science from the
               University of California, Santa Cruz. At Bloomberg, I work under
-              <b>Fixed Income and Derivatives Core Data</b> building backend
-              services, pipelines, and distributed data stores.
+              Fixed Income and Derivatives Core Data building backend services,
+              pipelines, and distributed data stores.
             </Typography>
             <Typography>
               Outside of work, I love staying active and creative. When I&apos;m
