@@ -14,19 +14,19 @@ export default function About() {
             <Typography>
               Hi there, My name is Eric! I&apos;m a 23 year old Software
               Engineer at Bloomberg LP with a B.S. in Computer Science from the
-              University of California, Santa Cruz. At Bloomberg, I primarily
-              work on backend data services and pipelines that power client
-              analysis tools for fixed income securities on the Bloomberg
-              Terminal.
+              University of California, Santa Cruz. At Bloomberg, I work under
+              <b>Fixed Income and Derivatives Core Data</b> building backend
+              services, pipelines, and distributed data stores.
             </Typography>
             <Typography>
-              Outside of my professional pursuits, you can catch me embracing
-              the beauty of nature on a hike, pushing my limits at the gym,
-              getting lost in the verses of romantic poets, or taking in the
-              breath-taking beauty of the night sky. I recently discovered a
-              passion for recreating some of my favorite traditional dishes from
-              Mexican culture/cuisine. I love sharing my culinary creations with
-              friends and family to show my appreciation for them!
+              Outside of work, I love staying active and creative. When I&apos;m
+              not hitting the courts for a game of basketball or exploring new
+              trails on a hike, you&apos;ll probably find me at the gym getting
+              a workout in. I also enjoy reading poetry and whipping up new
+              creations in the kitchen. I&apos;ve recently found a passion for
+              recreating my favorite dishes from Mexican culture/cuisine. I love
+              sharing my culinary creations with friends and family to show my
+              love and appreciation for them!
             </Typography>
             <Typography>
               I enjoy having conversations about tech or any of the hobbies that
