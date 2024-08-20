@@ -6,7 +6,7 @@ export default function Resume() {
     <>
       <Box height="535px">
         <object
-          data="/eric_hdez_resume_dec.pdf"
+          data="../../../public/eric_hdez_resume_dec.pdf"
           type="application/pdf"
           width="100%"
           height="100%"
