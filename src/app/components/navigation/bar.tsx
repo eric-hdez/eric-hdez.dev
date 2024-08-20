@@ -31,7 +31,7 @@ export const NavBar = ({
         zIndex={2}
         display={{ md: 'none' }}
         position="absolute"
-        top={48}
+        top={32.5}
         left={32}
       >
         <IconButton
@@ -96,7 +96,7 @@ export const NavBar = ({
             </Box>
           ))}
         </Box>
-        <Box zIndex={2} position="absolute" top={48} right={32}>
+        <Box zIndex={2} position="absolute" top={32.5} right={32}>
           <ModeToggle />
         </Box>
       </Box>

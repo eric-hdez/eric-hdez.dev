@@ -1,16 +1,21 @@
 import React from 'react';
-import { Box } from '@mui/joy';
+import { Box, Typography } from '@mui/joy';
 
 export default function Resume() {
   return (
     <>
       <Box height="535px">
-        <embed
-          src="/eric_hdez_resume_dec.pdf"
+        <object
+          data="/eric_hdez_resume_dec.pdf"
           type="application/pdf"
           width="100%"
           height="100%"
-        />
+        >
+          <Typography>
+            This brower does not have a PDF plugin. Use the download button
+            above to view the media.
+          </Typography>
+        </object>
       </Box>
     </>
   );

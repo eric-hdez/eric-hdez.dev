@@ -16,7 +16,7 @@ export interface NavItemData {
   color: string;
 }
 
-const height: number = 140;
+const height: number = 110;
 
 export const navItems: NavItemData[] = [
   { name: 'home', route: '/', color: 'primary' },

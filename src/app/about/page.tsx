@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Stack, Typography } from '@mui/joy';
 import Image from 'next/image';
 
-import eric from '../../../public/eric_arboretum.webp';
+import eric from '../../../public/eric_birthday.webp';
 
 export default function About() {
   return (

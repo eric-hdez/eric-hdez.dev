@@ -13,7 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 
-import eric from '../../../public/eric_birthday.webp';
+import eric from '../../../public/eric_arboretum.webp';
 
 const buttons = [
   {
