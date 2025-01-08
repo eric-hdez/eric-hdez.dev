@@ -74,11 +74,13 @@ export const NavBar = ({
               <NavItem {...{ name, route, color }} />
               {path === '/resume' ? (
                 <JoyLink
+                  disabled
                   component="a"
                   href="/eric_hdez_resume_dec.pdf"
                   download
                 >
                   <IconButton
+                    disabled
                     variant="outlined"
                     size="lg"
                     color={color as ColorPaletteProp}
