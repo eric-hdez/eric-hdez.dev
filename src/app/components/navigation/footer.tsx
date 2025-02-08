@@ -36,6 +36,7 @@ export const Footer = () => {
               aria-label={description}
               size="lg"
               variant="outlined"
+              sx={{ borderRadius: 0 }}
             >
               eric-hdez@proton.me
             </Button>
