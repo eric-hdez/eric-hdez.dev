@@ -14,24 +14,19 @@ export default function About() {
             <Typography>
               Hi there, My name is Eric! I&apos;m a 23 year old Software
               Engineer at Bloomberg LP with a B.S. in Computer Science from the
-              University of California, Santa Cruz. At Bloomberg, I work under
-              Fixed Income and Derivatives Core Data building backend services,
-              pipelines, and distributed data stores.
+              University of California, Santa Cruz. At Bloomberg, I design and
+              develop backend services, pipelines, and distributed data stores
+              for fixed income instruments on the Bloomberg Terminal.
             </Typography>
             <Typography>
-              Outside of work, I love staying active and creative. When I&apos;m
-              not hitting the courts for a game of basketball or exploring new
-              trails on a hike, you&apos;ll probably find me at the gym getting
-              a workout in. I also enjoy reading poetry and whipping up new
-              creations in the kitchen. I&apos;ve recently found a passion for
-              recreating my favorite dishes from Mexican culture/cuisine. I love
-              sharing my culinary creations with friends and family to show my
-              love and appreciation for them!
+              Outside of work, I enjoy long walks, reading poetry, listening to
+              music, cooking, and playing video games. I will start learning how
+              to play the guitar very soon!
             </Typography>
             <Typography>
               I enjoy having conversations about tech or any of the hobbies that
-              I&apos;m passionate about. Feel free to reach out to me via social
-              media or email if you would like to have a chat!
+              I mentioned above. Feel free to reach out to me via social media
+              or email if you would like to have a chat!
             </Typography>
           </Stack>
         </Stack>
