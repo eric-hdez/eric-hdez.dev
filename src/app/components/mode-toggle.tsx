@@ -21,6 +21,7 @@ export default function ModeToggle() {
       variant="outlined"
       color="warning"
       size="lg"
+      sx={{ borderRadius: 0 }}
       onClick={() => (mode === 'light' ? setMode('dark') : setMode('light'))}
     >
       {mode === 'light' ? <DarkModeRoundedIcon /> : <LightModeRoundedIcon />}
