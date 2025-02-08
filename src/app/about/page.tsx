@@ -9,7 +9,7 @@ export default function About() {
     <Grid container m={0} p={2} justifyContent="center">
       <Grid p={2} xs={12} md={7} lg={8}>
         <Stack direction="column" justifyContent="space-between">
-          <Stack direction="column" spacing={1} overflowY="scroll">
+          <Stack direction="column" spacing={1}>
             <Typography level="h1">About Me</Typography>
             <Typography>
               Hi there, My name is Eric! I&apos;m a 23 year old Software

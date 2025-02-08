@@ -25,6 +25,7 @@ export default function NavItem({
             path === route
               ? `var(--joy-palette-${color}-outlinedHoverBg)`
               : 'transparent',
+          borderRadius: 0,
         }}
       >
         {name.toUpperCase()}

@@ -85,6 +85,7 @@ export const NavBar = ({
                     sx={{
                       ml: 2,
                       display: path === route ? 'flex' : 'none',
+                      borderRadius: 0,
                     }}
                   >
                     <DownloadIcon />

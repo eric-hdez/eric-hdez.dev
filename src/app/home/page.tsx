@@ -64,6 +64,7 @@ export default function Home() {
                   color={color as ColorPaletteProp}
                   variant="outlined"
                   size="lg"
+                  sx={{ borderRadius: 0 }}
                 >
                   {icon}
                 </IconButton>
