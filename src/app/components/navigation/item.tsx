@@ -6,6 +6,7 @@ import { NavItemData, NavProps } from './navigation';
 export interface NavItemProps extends NavProps, NavItemData {}
 
 export default function NavItem({
+  decorator,
   name,
   route,
   color,
@@ -15,11 +16,11 @@ export default function NavItem({
   return (
     <Link href={route} shallow={true} passHref>
       <Button
-        variant="outlined"
+        variant="plain"
         size="lg"
-        color={color as ColorPaletteProp}
+        startDecorator={decorator}
+        color="neutral"
         onClick={handleDrawerOpen}
-        fullWidth
         sx={{
           bgcolor:
             path === route
@@ -27,7 +28,7 @@ export default function NavItem({
               : 'transparent',
         }}
       >
-        {name.toUpperCase()}
+        {name}
       </Button>
     </Link>
   );

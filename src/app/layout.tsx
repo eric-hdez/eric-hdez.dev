@@ -24,9 +24,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeRegistry options={{ key: 'joy' }}>
           <Navigation />
-          <Stack direction="row" width="100%" height="100%">
-            <Container maxWidth="lg">
-              <Box border={2}>{children}</Box>
+          <Stack direction="column" width="100%" height="100%">
+            <Container maxWidth="md">
+              {children}
             </Container>
           </Stack>
           <Footer />
