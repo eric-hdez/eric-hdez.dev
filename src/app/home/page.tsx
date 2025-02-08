@@ -34,12 +34,6 @@ const buttons = [
     icon: <InstagramIcon />,
     color: 'success',
   },
-  {
-    link: 'https://www.twitter.com/eric_witha__c',
-    description: 'Eric\'s X Profile',
-    icon: <XIcon />,
-    color: 'warning',
-  },
 ];
 
 export default function Home() {

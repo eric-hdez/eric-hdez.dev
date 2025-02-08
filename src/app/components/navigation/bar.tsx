@@ -75,7 +75,7 @@ export const NavBar = ({
               {path === '/resume' ? (
                 <JoyLink
                   component="a"
-                  href="/eric_hdez_resume_dec.pdf"
+                  href="/eric_hdez_resume.pdf"
                   download
                 >
                   <IconButton
