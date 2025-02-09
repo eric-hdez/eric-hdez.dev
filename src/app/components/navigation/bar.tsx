@@ -50,6 +50,7 @@ export const NavBar = ({
               color: drawerOpen
                 ? `var(--joy-palette-neutral-plainHoverColor)`
                 : `var(--Icon-color)`,
+              borderRadius: 0,
             }}
           />
         </IconButton>
