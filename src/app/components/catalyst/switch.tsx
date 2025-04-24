@@ -1,6 +1,6 @@
-import * as Headless from '@headlessui/react'
-import clsx from 'clsx'
-import type React from 'react'
+import * as Headless from '@headlessui/react';
+import clsx from 'clsx';
+import type React from 'react';
 
 export function SwitchGroup({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
   return (
@@ -15,7 +15,7 @@ export function SwitchGroup({ className, ...props }: React.ComponentPropsWithout
         'has-data-[slot=description]:space-y-6 has-data-[slot=description]:**:data-[slot=label]:font-medium'
       )}
     />
-  )
+  );
 }
 
 export function SwitchField({
@@ -40,7 +40,7 @@ export function SwitchField({
         'has-data-[slot=description]:**:data-[slot=label]:font-medium'
       )}
     />
-  )
+  );
 }
 
 const colors = {
@@ -132,7 +132,7 @@ const colors = {
     '[--switch-bg-ring:var(--color-rose-600)]/90 [--switch-bg:var(--color-rose-500)] dark:[--switch-bg-ring:transparent]',
     '[--switch:white] [--switch-ring:var(--color-rose-600)]/90 [--switch-shadow:var(--color-rose-900)]/20',
   ],
-}
+};
 
 type Color = keyof typeof colors
 
@@ -191,5 +191,5 @@ export function Switch({
         )}
       />
     </Headless.Switch>
-  )
+  );
 }
