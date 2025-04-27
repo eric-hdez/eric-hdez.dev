@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import BackDrop from '../components/backdrop';
-import { ExitIcon, NewTabIcon } from '../components/icons';
+import { ExitIcon, NewTabIcon, PaperClipIcon } from '../components/icons';
 import Link from 'next/link';
 
 const FileList = [
@@ -29,15 +29,15 @@ export default function Example() {
   return (
     <>
       <dd className="mt-1 text-sm/6 sm:col-span-2 sm:mt-0">
-        <ul role="list" className="divide-y divide-gray-100 rounded-md border border-gray-200">
+        <ul role="list" className="divide-y divide-gray-100">
           {FileList.map(({ name, link }, idx) => (
             <li key={idx} className="flex flex-col sm:flex-row items-center justify-between py-4 pr-5 sm:pl-4 text-sm/6">
               <div className="flex flex-1 items-center pb-2 sm:pb-0">
                 <div className="flex min-w-0 flex-1 gap-2">
+                    <PaperClipIcon />
                   <span className="font-medium text-gray-700">{name}</span>
                 </div>
               </div>
-
               <div className="flex shrink-0 space-x-4">
                 <a href={link} download className="rounded-md bg-white font-medium underline hover:text-gray-500 hover:cursor-pointer">
                   Download
