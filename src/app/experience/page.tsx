@@ -6,8 +6,8 @@ const experience = [
     icon: <img src="https://cdn.brandfetch.io/idy68RSCip/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" />,
   },
   {
-    title: 'Student Software Developer',
-    company: 'UC Santa Cruz ITS Software Engineering',
+    title: 'Software Engineer',
+    company: 'UC Santa Cruz IT Services',
     years: 'Jan 2023 - Sept 2023',
     icon: <img src="https://media.licdn.com/dms/image/v2/C4E0BAQEEdPQHFbiGrg/company-logo_100_100/company-logo_100_100/0/1656436364797?e=1750896000&v=beta&t=E8WUjw9I865jqlXRUkQgULJpNNnH0R3-VU1MgLZ1r5E" />,
   },
@@ -24,27 +24,26 @@ export default function Resume() {
   return (
     <>
       <h1 className="mb-7 text-[#3b4149] font-semibold text-balance">Experience</h1>
-      {experience.map(({ title, company, years, icon }) => (
-        <>
-          <h2 className=" mt-7 mb-12 text-[#3b4149] font-semibold text-balance">
-            <div className="flex mt-7 items-center">
-              <span className="mr-2 h-16 w-16">
-                {icon}
-              </span>
-              <div className="flex flex-col">
-                <span>
-                  {title}
-                </span>
-                <span className="text-[#8c95a1]">
-                  {company}
-                </span>
-                <span className="text-[#8c95a1]">
-                  {years}
-                </span>
-              </div>
+      {experience.map(({ title, company, years, icon }, idx) => (
+        <h2 key={idx} className="mt-7 mb-12 text-[#3b4149] font-semibold text-balance">
+          <div className="flex flex-col sm:flex-row mt-7 sm:items-center">
+            <div className="sm:flex mb-2 sm:mr-2 sm:mb-0 h-16 w-16">
+              {icon}
             </div>
-          </h2>
-        </>))}
+            <div className="flex flex-col flex-1">
+              <span>
+                {title}
+              </span>
+              <span className="text-[#8c95a1]">
+                {company}
+              </span>
+              <span className="text-[#8c95a1]">
+                {years}
+              </span>
+            </div>
+          </div>
+        </h2>
+      ))}
     </>
   );
 }

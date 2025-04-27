@@ -13,13 +13,14 @@ const sidebarItems = [
   { name: 'about', route: '/about' },
   { name: 'experience', route: '/experience' },
   { name: 'projects', route: '/projects' },
+  { name: 'resume', route: '/resume' },
 ];
 
 export default function SideBar() {
   const [selected, setSelected] = useState<number>(0);
 
   return (
-    <Sidebar className="mr-14">
+    <Sidebar>
       <SidebarBody className="px-0 py-1 justify-items-end">
         {sidebarItems.map(({ name, route }, idx) => (
           <Link
@@ -39,19 +40,6 @@ export default function SideBar() {
             </SidebarLabel>
           </Link>
         ))}
-        <Link
-          href="/eric_hdez_resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group flex pb-1 justify-end group-hover:cursor-pointer items-center"
-        >
-          <SidebarLabel
-            className="flex text-[#8c95a1] group-hover:text-[#4a515b] ml-0 mr-1.5 px-0"
-          >
-                        resume
-          </SidebarLabel>
-          <span className="w-3.25 h-3.25 [&>svg]:fill-[#8c95a1] [&>svg]:group-hover:fill-[#4a515b]"><DownloadIcon /></span>
-        </Link>
       </SidebarBody>
     </Sidebar>
   );

@@ -23,11 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-[#fcfcfc] text-[#4a515b]">
       <body className={inter.className}>
-        <div className="mx-auto max-w-7xl px-8 py-12">
+        <div className="max-w-7xl p-6 sm:p-10 md:p-14">
           <div className="flex flex-1">
-            <SideBar />
+            <div className="pr-6 sm:pr-10 md:pr-14">
+              <SideBar />
+            </div>
             <div className="inline-block min-h-[1em] min-w-0.25 self-stretch bg-[#d8dbdfb3] dark:bg-[#d8dbdfb3]" />
-            <div className="px-14 py-1 relative flex-1 max-w-4xl [contain:inline-size]">
+            <div className="pl-6 sm:pl-10 md:pl-14 py-1 relative flex-1 max-w-3xl [contain:inline-size]">
               {children}
             </div>
           </div>

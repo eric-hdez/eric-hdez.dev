@@ -30,8 +30,8 @@ export default function About() {
       <p className="mt-7">My main interests include operating systems, compilers, programming languages, and backend engineering. I enjoy learning by falling through rabbit holes.</p>
       <p className="mt-7">Outside of work, I enjoy long walks, playing with my cat, listening to music, cooking, and playing video games. I will start learning how to play the guitar soon! Feel free to reach out to me via social media or email if you would like to have a chat about tech or any of my hobbies.</p>
       <div className="flex mt-7">
-        {comms.map(({ name, link, icon }) => (
-          <span className="mr-4 w-6 h-6" key={name}>
+        {comms.map(({ name, link, icon }, idx) => (
+          <span key={idx} className="mr-7 w-6 h-6">
             <Link
               href={link}
               rel="noopener noreferrer"
