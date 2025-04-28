@@ -6,14 +6,14 @@ import BackDrop from '../components/backdrop';
 import { ExitIcon, NewTabIcon, PaperClipIcon } from '../components/icons';
 import Link from 'next/link';
 
-const FileList = [
+const files = [
   {
     name: 'Software Engineer Resume',
-    link: '/eric_hdez_resume.pdf',
+    link: '/eric_hernandez_resume.pdf',
   },
 ];
 
-export default function Example() {
+export default function Resume() {
   const [viewingPdf, setViewingPdf] = useState<string | null>(null);
   const [currentFileName, setCurrentFileName] = useState('');
 
@@ -30,7 +30,7 @@ export default function Example() {
     <>
       <dd className="mt-1 text-sm/6 sm:col-span-2 sm:mt-0">
         <ul role="list" className="divide-y divide-gray-100">
-          {FileList.map(({ name, link }, idx) => (
+          {files.map(({ name, link }, idx) => (
             <li key={idx} className="flex flex-col sm:flex-row items-center justify-between py-4 pr-5 sm:pl-4 text-sm/6">
               <div className="flex flex-1 items-center pb-2 sm:pb-0">
                 <div className="flex min-w-0 flex-1 gap-2">
