@@ -59,11 +59,11 @@ export default function Example() {
       {viewingPdf && (
         <>
           <BackDrop />
-          <div className="fixed inset-0 z-50 flex items-center justify-center px-6">
+          <div className="fixed inset-0 z-50 flex items-center justify-center px-2">
             <div className="relative w-full max-w-5xl h-5/6 bg-white rounded-lg shadow-xl overflow-hidden flex flex-col">
               <div className="p-4 flex justify-between items-center border-b bg-[#fcfcfc]">
-                <div className="pl-3 flex flex-row items-center">
-                  <h3 className="text-lg font-medium truncate">{currentFileName}</h3>
+                <div className="pl-2 flex flex-row items-center">
+                  <h2 className="text-md font-medium truncate">{currentFileName}</h2>
                   <Link
                     href={viewingPdf}
                     target="_blank"
@@ -73,7 +73,7 @@ export default function Example() {
                     <NewTabIcon />
                   </Link>
                 </div>
-                <div className="flex space-x-2 pr-2">
+                <div className="flex space-x-2 pr-1">
                   <button
                     onClick={closeViewer}
                     className="p-1 rounded-md hover:cursor-pointer rounded-md hover:bg-gray-300"
