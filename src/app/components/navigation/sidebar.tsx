@@ -2,14 +2,15 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   Sidebar,
   SidebarBody,
   SidebarLabel,
 } from '../catalyst/sidebar';
-import { DownloadIcon } from '../icons';
 
-const sidebarItems = [
+
+const sections = [
   { name: 'about', route: '/about' },
   { name: 'experience', route: '/experience' },
   { name: 'projects', route: '/projects' },
@@ -17,12 +18,15 @@ const sidebarItems = [
 ];
 
 export default function SideBar() {
-  const [selected, setSelected] = useState<number>(0);
+  const path = usePathname();
+  const [selected, setSelected] = useState<number>(
+    sections.findIndex(({ route }) => route === path)
+  );
 
   return (
     <Sidebar>
       <SidebarBody className="px-0 py-1 justify-items-end">
-        {sidebarItems.map(({ name, route }, idx) => (
+        {sections.map(({ name, route }, idx) => (
           <Link
             key={name}
             href={route}

@@ -16,7 +16,7 @@ const projects = [
     name: 'Schmidt-Samoa Cryptosystem',
     description: [
       'A cryptosystem developed in C and Python that implements the ',
-      <Link key="-" href="https://eprint.iacr.org/2005/278.pdf" rel="noopener noreferrer" target="_blank" className=" underline hover:text-[#4a515b]">Schmidt-Samoa public key encryption</Link>,
+      <Link key="-" href="https://eprint.iacr.org/2005/278.pdf" rel="noopener noreferrer" target="_blank" className="underline hover:text-[#4a515b]">Schmidt-Samoa public key encryption</Link>,
       ' scheme. The implementation includes features such as key generation, file encryption, and file decryption.',
     ],
     icon: <EncryptedFilesIcon />,
@@ -34,8 +34,8 @@ export default function Projects() {
       <h1 className="mb-7 text-[#3b4149] font-semibold text-balance">Projects</h1>
       <p className="mt-7">These are a few projects that I am currently working on or that I have completed in the past.</p>
       {projects.map(({ name, description, icon }, idx) => (
-        <>
-          <h2 key={idx} className=" mt-14 mb-7 text-[#3b4149] font-semibold text-balance">
+        <div key={idx} className="mt-14">
+          <h2 className="mb-7 text-[#3b4149] font-semibold text-balance">
             <div className="flex mt-7 items-center">
               <span className="mr-2 h-6 w-6">
                 {icon}
@@ -46,7 +46,7 @@ export default function Projects() {
             </div>
           </h2>
           <p key={`${idx}-des`} className="mt-7">{description}</p>
-        </>))}
+        </div>))}
     </>
   );
 }
