@@ -1,13 +1,12 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   Sidebar,
   SidebarBody,
   SidebarLabel,
-} from '../catalyst/sidebar';
+} from './catalyst/sidebar';
 
 
 const sections = [
@@ -19,9 +18,6 @@ const sections = [
 
 export default function SideBar() {
   const path = usePathname();
-//   const [selected, setSelected] = useState<number>(
-//     sections.findIndex(({ route }) => route === path)
-//   );
 
   return (
     <Sidebar>
@@ -32,7 +28,6 @@ export default function SideBar() {
             href={route}
             shallow={true}
             passHref
-            // onClick={() => setSelected(idx)}
             className="flex pb-1 justify-end hover:cursor-pointer">
             <SidebarLabel
               className={`${path == route ?
