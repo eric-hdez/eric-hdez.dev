@@ -19,9 +19,9 @@ const sections = [
 
 export default function SideBar() {
   const path = usePathname();
-  const [selected, setSelected] = useState<number>(
-    sections.findIndex(({ route }) => route === path)
-  );
+//   const [selected, setSelected] = useState<number>(
+//     sections.findIndex(({ route }) => route === path)
+//   );
 
   return (
     <Sidebar>
@@ -32,10 +32,10 @@ export default function SideBar() {
             href={route}
             shallow={true}
             passHref
-            onClick={() => setSelected(idx)}
+            // onClick={() => setSelected(idx)}
             className="flex pb-1 justify-end hover:cursor-pointer">
             <SidebarLabel
-              className={`${selected == idx ?
+              className={`${path == route ?
                 'text-[#1e2125]' :
                 'text-[#8c95a1] hover:text-[#4a515b]'}
                             mx-0 px-0`}
