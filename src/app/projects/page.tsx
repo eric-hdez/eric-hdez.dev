@@ -9,11 +9,13 @@ const projects = [
   },
   {
     name: 'Baskin Marketplace',
+    link: 'https://github.com/jorahty/baskin',
     description: ['A marketplace web application developed in collaboration with four other students for our senior capstone project. The application allows users to buy and sell items, and includes features such as user authentication, item listings, and a shopping cart.'],
     icon: <MarketPlaceIcon />,
   },
   {
     name: 'Schmidt-Samoa Cryptosystem',
+    link: 'https://github.com/eric-hdez/schmidt-samoa',
     description: [
       'A cryptosystem developed in C and Python that implements the ',
       <Link key="-" href="https://eprint.iacr.org/2005/278.pdf" rel="noopener noreferrer" target="_blank" className="underline hover:text-[#4a515b]">Schmidt-Samoa public key encryption</Link>,
@@ -23,6 +25,7 @@ const projects = [
   },
   {
     name: 'Snake',
+    link: 'https://github.com/eric-hdez/snake-game',
     description: ['A simple snake game developed in Python using the Pygame library. The game is started on the terminal and includes features such as score tracking and replayability.'],
     icon: <SnakeIcon />,
   },
@@ -33,18 +36,34 @@ export default function Projects() {
     <>
       <h1 className="mb-7 text-[#3b4149] font-semibold text-balance">Projects</h1>
       <p className="mt-7">These are a few projects that I am currently working on or that I have completed in the past.</p>
-      {projects.map(({ name, description, icon }, idx) => (
+      {projects.map(({ name, link, description, icon }, idx) => (
         <div key={idx} className="mt-14">
-          <h2 className="mb-7 text-[#3b4149] font-semibold text-balance">
-            <div className="flex mt-7 items-center">
-              <span className="mr-2 h-6 w-6">
-                {icon}
-              </span>
-              <span>
-                {name}
-              </span>
-            </div>
-          </h2>
+          {link ? (
+            <Link href={link} rel="noopener noreferrer" target="_blank" className="group">
+              <h2 className="mb-7 text-[#3b4149] font-semibold text-balance">
+                <div className="flex mt-7 items-center">
+                  <span className="mr-2 h-6 w-6 [&>svg]:group-hover:fill-[#4a515b]">
+                    {icon}
+                  </span>
+                  <span className="group-hover:cursor-pointer group-hover:text-[#4a515b]">
+                    {name}
+                  </span>
+                </div>
+              </h2>
+            </Link>
+          ) : (
+            <h2 className="mb-7 text-[#3b4149] font-semibold text-balance">
+              <div className="flex mt-7 items-center">
+                <span className="mr-2 h-6 w-6">
+                  {icon}
+                </span>
+                <span>
+                  {name}
+                </span>
+              </div>
+            </h2>
+          )}
+          
           <p key={`${idx}-des`} className="mt-7">{description}</p>
         </div>))}
     </>

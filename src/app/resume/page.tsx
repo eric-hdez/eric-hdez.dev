@@ -28,10 +28,11 @@ export default function Resume() {
 
   return (
     <>
-      <dd className="mt-1 text-sm/6 sm:col-span-2 sm:mt-0">
+      <h1 className="mb-7 text-[#3b4149] font-semibold text-balance">Resume</h1>
+      <dd className="text-sm/6 sm:col-span-2 mt-7">
         <ul role="list" className="divide-y divide-gray-100">
           {files.map(({ name, link }, idx) => (
-            <li key={idx} className="flex flex-col sm:flex-row items-center justify-between py-4 pr-5 sm:pl-4 text-sm/6">
+            <li key={idx} className="flex flex-col sm:flex-row items-center justify-between mt-7 text-sm/6">
               <div className="flex flex-1 items-center pb-2 sm:pb-0">
                 <div className="flex min-w-0 flex-1 gap-2">
                     <PaperClipIcon />
