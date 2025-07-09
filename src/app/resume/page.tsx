@@ -9,7 +9,7 @@ import Link from 'next/link';
 const files = [
   {
     name: 'Software Engineer Resume',
-    link: '/eric_hernandez_resume.pdf',
+    link: '/eric_hdez_resume.pdf',
   },
 ];
 
