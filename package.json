@@ -19,10 +19,10 @@
     "@heroicons/react": "^2.2.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.7.4",
-    "next": "15.2.5",
+    "next": "15.5.26",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sharp": "^0.33.2"
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -30,7 +30,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.2.5",
+    "eslint-config-next": "15.5.26",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
