@@ -3,8 +3,8 @@ import { BrainIcon, EncryptedFilesIcon, MarketPlaceIcon, SnakeIcon } from '../co
 
 const projects = [
   {
-    name: 'Alice',
-    description: ['Alice is a special project that I am working on with two university friends. We are leveraging our knowledge of artificial intelligence, data intensive applications, and human compassion to bring accessible mental health support to people who otherwise can\'t afford it.'],
+    name: 'Sana',
+    description: ['Sana is a special project that I am working on with two university friends. We are leveraging our knowledge of artificial intelligence, data intensive applications, and human compassion to bring accessible mental health support to people who otherwise can\'t afford it.'],
     icon: <BrainIcon />,
   },
   {
