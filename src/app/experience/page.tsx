@@ -9,7 +9,7 @@ const experience = [
     title: 'Software Developer',
     company: 'UC Santa Cruz IT Services',
     years: 'Jan 2023 - Sept 2023',
-    icon: <img src="https://media.licdn.com/dms/image/v2/C4E0BAQEEdPQHFbiGrg/company-logo_100_100/company-logo_100_100/0/1656436364797?e=1757548800&v=beta&t=yCH1Jn9tsxsIKbHB1mJRqKBse0677KoV2Y7RM85HcW4" />,
+    icon: <img src="https://cdn.brandfetch.io/ucsc.edu/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" />,
   },
   {
     title: 'Software Engineer Intern',
