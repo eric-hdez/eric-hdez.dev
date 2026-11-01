@@ -1,7 +1,13 @@
 import Link from 'next/link';
-import { BrainIcon, EncryptedFilesIcon, MarketPlaceIcon, SnakeIcon } from '../components/icons';
+import { BrainIcon, CacheHitIcon, EncryptedFilesIcon, MarketPlaceIcon } from '../components/icons';
 
 const projects = [
+  {
+    name: 'cachehit',
+    link: 'https://cachehit.net',
+    description: ['A web app I built to learn system design a few minutes a day. It has 44 short, problem-first lessons across six tracks, 133 quiz questions, and a daily question with streaks, plus optional email sign-in that syncs progress across devices. Built with React, TypeScript, Vite and Tailwind, with Supabase for accounts and Netlify for hosting.'],
+    icon: <CacheHitIcon />,
+  },
   {
     name: 'Sana',
     description: ['Sana is a special project that I am working on with two university friends. We are leveraging our knowledge of artificial intelligence, data intensive applications, and human compassion to bring accessible mental health support to people who otherwise can\'t afford it.'],
@@ -22,12 +28,6 @@ const projects = [
       ' scheme. The implementation includes features such as key generation, file encryption, and file decryption.',
     ],
     icon: <EncryptedFilesIcon />,
-  },
-  {
-    name: 'Snake',
-    link: 'https://github.com/eric-hdez/snake-game',
-    description: ['A simple snake game developed in Python using the Pygame library. The game is started on the terminal and includes features such as score tracking and replayability.'],
-    icon: <SnakeIcon />,
   },
 ];
 
