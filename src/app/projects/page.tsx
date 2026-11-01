@@ -3,7 +3,7 @@ import { BrainIcon, CacheHitIcon, EncryptedFilesIcon, MarketPlaceIcon } from '..
 
 const projects = [
   {
-    name: 'cachehit',
+    name: 'CacheHit',
     link: 'https://cachehit.net',
     description: ['A web app I built to learn system design a few minutes a day. It has 44 short, problem-first lessons across six tracks, 133 quiz questions, and a daily question with streaks, plus optional email sign-in that syncs progress across devices. Built with React, TypeScript, Vite and Tailwind, with Supabase for accounts and Netlify for hosting.'],
     icon: <CacheHitIcon />,
