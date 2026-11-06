@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import SideBar from './components/sidebar';
-import { themeScript } from './components/theme-toggle';
+import ThemeToggle, { themeScript } from './components/theme-toggle';
 
 import './globals.css';
 
@@ -32,6 +32,9 @@ export default function RootLayout({
             </div>
             <div className="inline-block min-h-[1em] min-w-0.25 self-stretch bg-rule" />
             <div className="pl-6 sm:pl-10 md:pl-14 py-1 relative flex-1 max-w-3xl [contain:inline-size]">
+              <div className="flex justify-end mb-4 sm:mb-0 sm:absolute sm:top-0 sm:right-0">
+                <ThemeToggle />
+              </div>
               {children}
             </div>
           </div>

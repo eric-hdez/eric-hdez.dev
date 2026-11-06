@@ -7,7 +7,6 @@ import {
   SidebarBody,
   SidebarLabel,
 } from './catalyst/sidebar';
-import ThemeToggle from './theme-toggle';
 
 
 const sections = [
@@ -40,9 +39,6 @@ export default function SideBar() {
             </SidebarLabel>
           </Link>
         ))}
-        <div className="flex justify-end mt-6">
-          <ThemeToggle />
-        </div>
       </SidebarBody>
     </Sidebar>
   );
