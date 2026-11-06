@@ -6,8 +6,8 @@ const experience = [
     icon: <img src="https://cdn.brandfetch.io/idy68RSCip/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" />,
   },
   {
-    title: 'Software Developer',
-    company: 'UC Santa Cruz IT Services',
+    title: 'Student Software Developer',
+    company: 'UC Santa Cruz ITS',
     years: 'Jan 2023 - Sept 2023',
     icon: <img src="https://cdn.brandfetch.io/ucsc.edu/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" />,
   },
