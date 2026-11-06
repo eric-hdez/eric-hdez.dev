@@ -28,26 +28,26 @@ export default function Resume() {
 
   return (
     <>
-      <h1 className="mb-7 text-[#3b4149] font-semibold text-balance">Resume</h1>
+      <h1 className="mb-7 text-heading font-semibold text-balance">Resume</h1>
       <dd className="text-sm/6 sm:col-span-2 mt-7">
-        <ul role="list" className="divide-y divide-gray-100">
+        <ul role="list" className="divide-y divide-rule">
           {files.map(({ name, link }, idx) => (
             <li key={idx} className="flex flex-col sm:flex-row items-center justify-between mt-7 text-sm/6">
               <div className="flex flex-1 items-center pb-2 sm:pb-0">
                 <div className="flex min-w-0 flex-1 gap-2">
                     <PaperClipIcon />
-                  <span className="font-medium text-gray-700">{name}</span>
+                  <span className="font-medium text-heading">{name}</span>
                 </div>
               </div>
               <div className="flex shrink-0 space-x-4">
-                <a href={link} download className="rounded-md bg-white font-medium underline hover:text-gray-500 hover:cursor-pointer">
+                <a href={link} download className="rounded-md font-medium underline hover:text-muted hover:cursor-pointer">
                   Download
                 </a>
-                <span aria-hidden="true" className="text-gray-300">|</span>
+                <span aria-hidden="true" className="text-rule">|</span>
                 <button
                   type="button"
                   onClick={() => handleView(link, name)}
-                  className="rounded-md bg-white font-medium hover:text-gray-500 underline hover:cursor-pointer"
+                  className="rounded-md font-medium hover:text-muted underline hover:cursor-pointer"
                 >
                   View
                 </button>
@@ -61,15 +61,15 @@ export default function Resume() {
         <>
           <BackDrop />
           <div className="fixed inset-0 z-50 flex items-center justify-center px-2">
-            <div className="relative w-full max-w-5xl h-5/6 bg-white rounded-lg shadow-xl overflow-hidden flex flex-col">
-              <div className="p-4 flex justify-between items-center border-b bg-[#fcfcfc]">
+            <div className="relative w-full max-w-5xl h-5/6 bg-surface rounded-lg shadow-xl overflow-hidden flex flex-col">
+              <div className="p-4 flex justify-between items-center border-b border-rule bg-page">
                 <div className="pl-2 flex flex-row items-center">
                   <h2 className="text-md font-medium truncate">{currentFileName}</h2>
                   <Link
                     href={viewingPdf}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ml-1 p-1 rounded-md hover:cursor-pointer hover:bg-gray-300"
+                    className="ml-1 p-1 rounded-md hover:cursor-pointer hover:bg-highlight"
                   >
                     <NewTabIcon />
                   </Link>
@@ -77,7 +77,7 @@ export default function Resume() {
                 <div className="flex space-x-2 pr-1">
                   <button
                     onClick={closeViewer}
-                    className="p-1 rounded-md hover:cursor-pointer rounded-md hover:bg-gray-300"
+                    className="p-1 rounded-md hover:cursor-pointer rounded-md hover:bg-highlight"
                   >
                     <ExitIcon />
                   </button>

@@ -7,6 +7,7 @@ import {
   SidebarBody,
   SidebarLabel,
 } from './catalyst/sidebar';
+import ThemeToggle from './theme-toggle';
 
 
 const sections = [
@@ -31,14 +32,17 @@ export default function SideBar() {
             className="flex pb-1 justify-end hover:cursor-pointer">
             <SidebarLabel
               className={`${path == route ?
-                'text-[#1e2125]' :
-                'text-[#8c95a1] hover:text-[#4a515b]'}
+                'text-strong' :
+                'text-muted hover:text-body'}
                             mx-0 px-0`}
             >
               {name}
             </SidebarLabel>
           </Link>
         ))}
+        <div className="flex justify-end mt-6">
+          <ThemeToggle />
+        </div>
       </SidebarBody>
     </Sidebar>
   );

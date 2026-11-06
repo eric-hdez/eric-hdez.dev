@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+/* Dark mode follows the .dark class on <html>, set by the theme toggle. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-strong: var(--strong);
+  --color-heading: var(--heading);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-highlight: var(--highlight);
+}
+
+:root {
+  --page: #fcfcfc;
+  --surface: #ffffff;
+  --ink: #000000;
+  --strong: #1e2125;
+  --heading: #3b4149;
+  --body: #4a515b;
+  --muted: #8c95a1;
+  --rule: #d8dbdfb3;
+  --highlight: #d1d5dc;
+  color-scheme: light;
+}
+
+.dark {
+  --page: #1e2125;
+  --surface: #25292e;
+  --ink: #f1f2f4;
+  --strong: #f1f2f4;
+  --heading: #d8dbdf;
+  --body: #b0b7c0;
+  --muted: #8c95a1;
+  --rule: #3b4149b3;
+  --highlight: #3b4149;
+  color-scheme: dark;
+}

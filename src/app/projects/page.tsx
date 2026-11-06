@@ -24,7 +24,7 @@ const projects = [
     link: 'https://github.com/eric-hdez/schmidt-samoa',
     description: [
       'A cryptosystem developed in C and Python that implements the ',
-      <Link key="-" href="https://eprint.iacr.org/2005/278.pdf" rel="noopener noreferrer" target="_blank" className="underline hover:text-[#4a515b]">Schmidt-Samoa public key encryption</Link>,
+      <Link key="-" href="https://eprint.iacr.org/2005/278.pdf" rel="noopener noreferrer" target="_blank" className="underline hover:text-body">Schmidt-Samoa public key encryption</Link>,
       ' scheme. The implementation includes features such as key generation, file encryption, and file decryption.',
     ],
     icon: <EncryptedFilesIcon />,
@@ -34,25 +34,25 @@ const projects = [
 export default function Projects() {
   return (
     <>
-      <h1 className="mb-7 text-[#3b4149] font-semibold text-balance">Projects</h1>
+      <h1 className="mb-7 text-heading font-semibold text-balance">Projects</h1>
       <p className="mt-7">These are a few projects that I am currently working on or that I have completed in the past.</p>
       {projects.map(({ name, link, description, icon }, idx) => (
         <div key={idx} className="mt-14">
           {link ? (
             <Link href={link} rel="noopener noreferrer" target="_blank" className="group">
-              <h2 className="mb-7 text-[#3b4149] font-semibold text-balance">
+              <h2 className="mb-7 text-heading font-semibold text-balance">
                 <div className="flex mt-7 items-center">
-                  <span className="mr-2 h-6 w-6 [&>svg]:group-hover:fill-[#4a515b]">
+                  <span className="mr-2 h-6 w-6 [&>svg]:group-hover:fill-body">
                     {icon}
                   </span>
-                  <span className="group-hover:cursor-pointer group-hover:text-[#4a515b]">
+                  <span className="group-hover:cursor-pointer group-hover:text-body">
                     {name}
                   </span>
                 </div>
               </h2>
             </Link>
           ) : (
-            <h2 className="mb-7 text-[#3b4149] font-semibold text-balance">
+            <h2 className="mb-7 text-heading font-semibold text-balance">
               <div className="flex mt-7 items-center">
                 <span className="mr-2 h-6 w-6">
                   {icon}

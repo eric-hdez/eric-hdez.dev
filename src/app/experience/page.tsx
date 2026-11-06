@@ -23,9 +23,9 @@ const experience = [
 export default function Resume() {
   return (
     <>
-      <h1 className="mb-7 text-[#3b4149] font-semibold text-balance">Experience</h1>
+      <h1 className="mb-7 text-heading font-semibold text-balance">Experience</h1>
       {experience.map(({ title, company, years, icon }, idx) => (
-        <h2 key={idx} className="mt-7 text-[#3b4149] font-semibold text-balance">
+        <h2 key={idx} className="mt-7 text-heading font-semibold text-balance">
           <div className="flex flex-col sm:flex-row mt-7 sm:items-center">
             <div className="sm:flex mb-2 sm:mr-2 sm:mb-0 h-16 w-16">
               {icon}
@@ -34,10 +34,10 @@ export default function Resume() {
               <span>
                 {title}
               </span>
-              <span className="text-[#8c95a1]">
+              <span className="text-muted">
                 {company}
               </span>
-              <span className="text-[#8c95a1]">
+              <span className="text-muted">
                 {years}
               </span>
             </div>
