@@ -26,13 +26,13 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <div className="max-w-7xl p-6 sm:p-10 md:p-14">
-          <div className="flex flex-1">
+          <div className="flex flex-1 mt-12">
             <div className="pr-6 sm:pr-10 md:pr-14">
               <SideBar />
             </div>
             <div className="inline-block min-h-[1em] min-w-0.25 self-stretch bg-rule" />
             <div className="pl-6 sm:pl-10 md:pl-14 py-1 relative flex-1 max-w-3xl [contain:inline-size]">
-              <div className="flex justify-end mb-4 sm:mb-0 sm:absolute sm:top-0 sm:right-0">
+              <div className="absolute bottom-full right-0 mb-4.5">
                 <ThemeToggle />
               </div>
               {children}
