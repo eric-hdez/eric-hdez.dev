@@ -27,9 +27,9 @@ export default function About() {
   return (
     <>
       <h1 className="mb-7 text-heading font-semibold text-balance">Eric Hernandez</h1>
-      <p className="mt-7">Hi there! I&apos;m a {getCurrentAge(2001, 5, 1)} year old Software Engineer at Bloomberg LP with a B.S. in Computer Science from the University of California, Santa Cruz. At Bloomberg, I engineer backend services, pipelines, and distributed data stores for fixed income instruments on the Bloomberg Terminal.</p>
-      <p className="mt-7">My main interests include operating systems, compilers, programming languages, and distributed systems. I learn best by falling through rabbit holes.</p>
-      <p className="mt-7">Outside of work, I enjoy long walks, playing with my cat, listening to music, cooking, and playing video games. I will start learning how to play the guitar soon! Feel free to reach out to me via social media or email if you would like to have a chat about tech or any of my hobbies.</p>
+      <p className="mt-7">Hi there! I&apos;m a {getCurrentAge(2001, 5, 1)} year old Software Engineer at Bloomberg LP in New York, where I work on the money markets data behind the Bloomberg Terminal. Day to day, that means distributed services, caching layers, databases, and real-time data pipelines that keep the data fast, highly available, and transparent for traders. One of those caches sits in front of a database answering over a billion queries a day. You&apos;ve heard of big data, well this is MASSIVE data :3</p>
+      <p className="mt-7">I have a B.S. in Computer Science from the University of California, Santa Cruz, and I&apos;m now working part-time toward an M.S. in Computer Science at Georgia Tech. Most of my work is in backend systems and infrastructure, but I&apos;m comfortable anywhere in the stack. My main interests are compilers, programming languages, and distributed systems, and I learn best by falling through rabbit holes.</p>
+      <p className="mt-7">Outside of work, I enjoy long walks, playing with my cats, listening to music, learning guitar, and playing video games (currently lots of Pok&eacute;mon TCG Pocket). Feel free to reach out via social media or email if you&apos;d like to chat about tech or any of my hobbies!</p>
       <div className="flex mt-7">
         {comms.map(({ name, link, icon }, idx) => (
           <span key={idx} className="mr-7 w-6 h-6">
